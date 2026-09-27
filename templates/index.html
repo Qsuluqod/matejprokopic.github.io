@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% set profile = resize_image(
+    path="images/profile.jpg",
+    width=900,
+    op="fit_width",
+    format="webp",
+    quality=100
+) %}
+
+
+<div id="locket">
+    <img src="{{ profile.url }}">
+
+    <div class="locket-text">
+        <h1>Matěj Prokopič</h1>
+        <p>
+            Ahoj! Vítej na mojí osobní stránce. V současné době se snažím dopsat bakalářku na FF UK a tím tak splnit svůj ultimátní cíl, a to sice stát se Bc et. Bc. Do toho jsem na magisterském studiu na MFF UK a ještě ve volném čase učím češtinu jako cizí jazyk.
+        </p>
+
+        <p>
+            Na tuto stránku budu dávat informace ohledně cvičení, které učím na matfyzu a vlastní materiály, které vytvářím pro didaktiku češtiny jako cizího jazyka. Možná časem přibyde i nějaký ten blog, kdo ví.
+        </p>
+    </div>
+</div>
+
+<div class="index-block">
+    <h2>Jak mě můžete kontaktovat?</h2>
+
+    <div class="contacts-grid">
+        <div class="contacts-grid-left">
+            e-mail <br>
+            telefon <br>
+            Github 
+        </div>
+
+        <div class="contacts-grid-right">
+            <a href="mailto:prokopicmatej@gmail.com">prokopicmatej@gmail.com</a><br>
+            <a href="tel:+420774204937">+420 774 204 937</a><br>
+            <a href="https://github.com/Qsuluqod">Qsuluqod</a>
+        </div>
+    </div>
+</div>
+
+{% set photo1 = resize_image(
+    path="images/galerie1.jpg",
+    width=900,
+    op="fit_width",
+    format="webp",
+    quality=100
+) %}
+
+{% set photo2 = resize_image(
+    path="images/galerie2.jpg",
+    width=900,
+    op="fit_width",
+    format="webp",
+    quality=100
+) %}
+
+{% set photo3 = resize_image(
+    path="images/galerie3.jpg",
+    width=900,
+    op="fit_width",
+    format="webp",
+    quality=100
+) %}
+
+<div class="index-block">
+    <div class="image-gallery">
+        <div class="photo-wrapper photo-1">
+            <img src="{{ photo1.url }}" alt="">
+        </div>
+
+        <div class="photo-wrapper photo-2">
+            <img src="{{ photo2.url }}" alt="">
+        </div>
+
+        <div class="photo-wrapper photo-3">
+            <img src="{{ photo3.url }}" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="index-block">
+    <h2>Přátelé, kteří mají ošklivější web, než já</h2>
+
+    <div class="contacts-grid">
+        <div class="contacts-grid-left">
+            Lukáš Veškrna <br>
+            Vojtěch Votruba <br>
+            Marek Maxa <br>
+            Janek Hartman <br>
+            Vítek Kološ
+            
+        </div>
+
+        
+        <div class="contacts-grid-right">
+            <a href="https://lv.skytoss.cz">lv.skytoss.cz</a><br>
+            <a href="https://vojtech-votruba.github.io">vojtech-votruba.github.io</a><br>
+            <a href="https://marek-maxa.github.io">marek-maxa.github.io</a><br>
+            <a href="https://hartmaj2.github.io">hartmaj2.github.io</a><br>           
+           <a href="https://www.vitkolos.cz">vitkolos.cz</a><br>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}

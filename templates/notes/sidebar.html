@@ -1,0 +1,20 @@
+<aside class="notes-sidebar">
+    <h2>
+        <a href="{{ notes.permalink }}">
+            {{ notes.title }}
+        </a>
+    </h2>
+
+    <nav>
+        {% for item in notes.pages %}
+            <a
+                href="{{ item.permalink }}"
+                {% if current_url == item.permalink %}
+                    class="active"
+                {% endif %}
+            >
+                {{ item.title }}
+            </a>
+        {% endfor %}
+    </nav>
+</aside>

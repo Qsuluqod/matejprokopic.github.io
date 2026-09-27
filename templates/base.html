@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="{{ lang }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block title %} - Matěj Prokopič{% endblock %}</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <script src="/js/navigation.js" defer></script>
+</head>
+
+<body>
+
+
+<header>
+    <div class = "nav-mobile-block">
+        <div id = "nav-header">
+            Matěj Prokopič
+        </div>
+    
+        <button
+            class="nav-toggle"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="main-navigation"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <nav>
+        <a href="/">O mně</a>
+        <a href="/matfyz-teaching/">Výuka - Matfyz</a>
+        <a href="/czech-teaching/"> Výuka - Čeština</a>
+        <a href="/blog/">Blog</a>
+    </nav>
+</header>
+
+
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
+</body>
+
+</html>

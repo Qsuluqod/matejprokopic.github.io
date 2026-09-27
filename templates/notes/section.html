@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% set notes = section %}
+
+<div class="notes-layout">
+
+    {% include "notes/sidebar.html" %}
+
+    <article class="notes-content">
+        <h1>{{ section.title }}</h1>
+
+        {{ section.content | safe }}
+    </article>
+
+</div>
+
+{% endblock content %}

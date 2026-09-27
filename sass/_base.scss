@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: var(--font-body);
+    color: var(--color-primary);
+}
+
+
+header {
+    background-color: var(--color-secondary);
+    display: flex;
+    gap: 60px;
+    padding: 20px 0 5px 0;
+    justify-content: center;
+    
+    #nav-header {
+        font-weight: bold;
+        color: var(--color-surface);
+    }
+}
+
+p {
+    font-size: 18px;
+}
+
+main {
+    max-width: 960px;
+    margin: auto;
+    padding: 60px 0;
+}
+
+@media (max-width: $mobile) {
+    p {
+
+        text-align:justify;
+        font-size: 16px;
+    }
+
+    main {
+        margin: 0 20px;
+        padding-top: 30px;
+    }
+}

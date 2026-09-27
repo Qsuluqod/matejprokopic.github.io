@@ -1,0 +1,42 @@
+section {
+
+    a {
+        text-decoration: none;
+    }
+    .snippets {
+        margin: 30px 0;
+    }
+    .snippet {
+        border-radius: 30px;
+        padding: 15px 25px;
+        margin: 12px 0px;
+
+        .snippet-top {
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+            justify-content: space-between;
+        }
+        .snippet-bottom {
+            margin-top: 4px;
+            font-size: 18px;
+        }
+    }
+
+    .snippet:hover {
+        background-color: var(--color-muted);
+    }
+}
+
+@media (max-width: $mobile) {
+    section {
+
+        .snippet {
+            padding: 5px 0;
+            
+            .snippet-top {
+                flex-flow: column;
+            }
+        }
+    }
+}
