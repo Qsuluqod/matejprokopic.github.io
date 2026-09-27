@@ -11,13 +11,11 @@
     }
 
     h1 {
-        font-size: 50px;
         padding-bottom: 15px;
         color: var(--color-primary);
     }
 
     p {
-        font-size: 18px;
         margin: 15px 0;
     }
 }
@@ -57,7 +55,6 @@
     .image-gallery {
         display: flex;
         justify-content: space-between;
-        // align-items: end;
         border-radius: 70px;
         overflow: hidden;
 
@@ -92,14 +89,6 @@
         flex-flow: column;
         flex-direction: column-reverse;
         align-items: center;
-
-        h1 {
-            font-size: 30px;
-        }
-
-        p {
-            font-size: 16px;
-        }
     }
 
     .index-block {

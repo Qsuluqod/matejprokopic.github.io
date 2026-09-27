@@ -1,6 +1,6 @@
 +++
 title = "Pády, základní přehled"
-weight = 1
+weight = 2
 +++
 
 lorem ipsum
