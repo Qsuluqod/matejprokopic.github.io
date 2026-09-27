@@ -2,7 +2,7 @@
 title = "O nesmyslnosti úzkostlivého lpění na gramatických pravidlech"
 date = 2026-09-26
 
-draft = "true"
+draft = true
 +++
 
 Pokud se ti někdy stalo, že tě někdo opravil ve tvém písemném projevu nařknouce tě z toho, že "neumíš gramatiku", tak ti gratuluji, protože tady jsi správně. 
