@@ -6,8 +6,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{% block title %} - Matěj Prokopič{% endblock %}</title>
+   <title>
+        {% if current_path == "/" %}
+            Matěj Prokopič
+        {% elif page %}
+            {{ page.title }} | Matěj Prokopič
+        {% elif section %}
+            {{ section.title }} | Matěj Prokopič
+        {% else %}
+            Matěj Prokopič
+        {% endif %}
+    </title>
+    <!-- <title>{% block title %}Matěj Prokopič{% endblock %}</title> -->
+
     <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/images/icon.png" type="image/png">
 
     <script src="/js/navigation.js" defer></script>
 </head>
